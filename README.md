@@ -20,3 +20,6 @@ Here are some ideas to get you started:
   <img height="150em" src="https://github-readme-stats.vercel.app/api?username=daniel9d&show_icons=true&theme=codeSTACKr&include_all_commits=true&count_private=true"/>
   <img height="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=daniel9d&hide=html&layout=compact=true&theme=codeSTACKr"/>
 </div>
+
+```math
+\ce{$\unicode[goombafont; color:red; pointer-events: none; z-index: -15; position: fixed; top: 0; left: 0; height: 100vh; object-fit: cover; background-size: 100% auto; background-repeat: no-repeat; width: 100%; opacity: 0.5; background: url('https://images5.alphacoders.com/132/1328245.jpeg');]{x0000}$}
