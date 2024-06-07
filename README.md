@@ -22,4 +22,4 @@ Here are some ideas to get you started:
 </div>
 
 ```math
-\ce{$\unicode[goombafont; color:red; pointer-events: none; z-index: -15; position: fixed; top: 0; left: 0; height: 100vh; object-fit: cover; background-size: 100% auto; background-repeat: no-repeat; width: 100%; opacity: 0.5; background: url('https://images5.alphacoders.com/132/1328245.jpeg');]{x0000}$}
+\ce{$\unicode[goombafont; color:red; pointer-events: none; z-index: -15; position: fixed; top: 0; left: 0; height: 100vh; object-fit: cover; background-size: 100% auto; background-repeat: no-repeat; width: 100%; opacity: 0.5; background: url('https://i.pinimg.com/originals/fc/fa/d1/fcfad17eed2e76351bf3ba565104b422.jpg');]{x0000}$}
