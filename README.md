@@ -22,6 +22,69 @@ Here are some ideas to get you started:
 </div>
 
 
-```math
-\ce{$\unicode[goombafont; color:red; pointer-events: none; z-index: -10; position: fixed; top: 0; left: 0; height: 100vh; object-fit: cover; background-size: cover; width: 130vw; opacity: 0.5; background: url('https://github.com/Daniel9D/Daniel9D/assets/89415617/e116e42b-1554-42ce-8871-abd08cc3d6ba');]{x0000}$}
 
+<style>
+    body {
+      background: #0d1117;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(53, 12px);
+      grid-template-rows: repeat(7, 12px);
+      gap: 4px;
+    }
+    .cell {
+      width: 10px;
+      height: 10px;
+      background-color: #161b22;
+      border-radius: 2px;
+      transition: background-color 0.3s;
+    }
+    .cell.active {
+      background-color: #26a641;
+    }
+  </style>
+  <div class="grid" id="grid"></div>
+
+  <script>
+  const grid = document.getElementById('grid');
+  const cols = 53;
+  const rows = 7;
+  const cells = [];
+
+  for (let r = 0; r < rows; r++) {
+    const row = [];
+    for (let c = 0; c < cols; c++) {
+      const cell = document.createElement('div');
+      cell.className = 'cell';
+      grid.appendChild(cell);
+      row.push(cell);
+    }
+    cells.push(row);
+  }
+
+  function animate() {
+    const time = Date.now() * 0.002;
+
+    for (let c = 0; c < cols; c++) {
+      const height = Math.floor((Math.sin(time + c * 0.5) + 1) * (rows / 2));
+      for (let r = 0; r < rows; r++) {
+        const cell = cells[rows - r - 1][c]; // inverter para começar de baixo
+        if (r < height) {
+          cell.classList.add('active');
+        } else {
+          cell.classList.remove('active');
+        }
+      }
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
