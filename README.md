@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 </div>
 
 
-
+<div>
 <style>
     body {
       background: #0d1117;
@@ -88,3 +88,4 @@ Here are some ideas to get you started:
 
   animate();
 </script>
+</div>
